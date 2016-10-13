@@ -1,0 +1,27 @@
+{% set name = "topoflow-infil-green-ampt-csdms" %}
+{% set version = "3.4" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  git_url: https://github.com/csdms/topoflow-bridge
+
+requirements:
+  build:
+    - bmi-babel
+    - topoflow
+  run:
+    - bmi-babel
+    - topoflow
+
+test:
+  requires:
+    - pymt
+    - bmi-tester
+
+about:
+  home: http://csdms.colorado.edu/wiki/Model:TopoFlow-Infiltration-Green-Ampt
+  license: Apache
+  summary: Infiltration process component (Green-Ampt method) for a D8-based, spatial hydrologic model
