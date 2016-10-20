@@ -1,4 +1,4 @@
-{% set name = "topoflow-infil-green-ampt-csdms" %}
+{% set name = "csdms-topoflow-infil-green-ampt" %}
 {% set version = "3.4" %}
 
 package:
